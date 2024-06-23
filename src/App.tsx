@@ -5,7 +5,7 @@ import ListaDos from "./components/ListaDos";
 
 <Titulo></Titulo>;
 function App() {
-  const list = ["Marcos", "Julian", "Gustavo"];
+  const list = ["Marcos", "Julian", "Gustavo", "Maria Dolores", "Carlos Luis"];
   const listados = [1, 4, 6, 8, 9];
   return (
     <Card>
