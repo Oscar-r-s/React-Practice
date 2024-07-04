@@ -1,25 +1,12 @@
-import { useState } from "react";
-
 type Props = {
   data: string;
+  func?: () => void;
 };
 
-function Button({ data }: Props) {
-  const [isSecondary, setIsSecondary] = useState(false);
-
-  const handleClick = () => {
-    if (!isSecondary) {
-      setIsSecondary(true);
-    }
-  };
-
+function Button({ data, func }: Props) {
   return (
-    <button
-      type="button"
-      onClick={handleClick}
-      className={`btn ${isSecondary ? "btn-secondary" : "btn-primary"}`}
-    >
-      {isSecondary ? "Calculando..." : data}
+    <button type="button" onClick={func} className="Btn">
+      {data}
     </button>
   );
 }
