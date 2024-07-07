@@ -2,7 +2,7 @@ import Titulo from "./components/Titulo";
 import Card, { CardBody } from "./components/Card";
 import List from "./components/List";
 import ListaDos from "./components/ListaDos";
-import Button from "./Button";
+import Button from "./components/Button";
 import { useState } from "react";
 
 <Titulo></Titulo>;
