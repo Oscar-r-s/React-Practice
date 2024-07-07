@@ -3,6 +3,7 @@ import Card, { CardBody } from "./components/Card";
 import List from "./components/List";
 import ListaDos from "./components/ListaDos";
 import Button from "./components/Button";
+import Input from "./components/Input";
 import { useState } from "react";
 
 <Titulo></Titulo>;
@@ -20,6 +21,7 @@ function App() {
   return (
     <Card>
       <CardBody title="Hola Mundo" text="Este es el texto" />
+      <Input inputType="color"></Input>
       <Button func={addElement} data="Add"></Button>
       <Button func={deleteElement} data="Delete"></Button>
       {contenido}
