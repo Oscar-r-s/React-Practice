@@ -12,8 +12,10 @@ function App() {
   const listados = [1, 4, 6, 8, 9];
   //Ternary operator : in case there´s no content return nothing
   const contenido = Data.length > 0 ? <List data={Data} /> : undefined;
+  const colorChosen = document.getElementsByClassName(".inputComponent");
+  console.log("This is colorChosen : ", colorChosen);
   const addElement = () => {
-    setData([...Data, "Orange"]);
+    setData([...Data, `${colorChosen}`]);
   };
   const deleteElement = () => {
     setData(Data.slice(0, -1));
