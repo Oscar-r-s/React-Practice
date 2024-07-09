@@ -1,9 +1,9 @@
-import Titulo from "./components/Titulo";
-import Card, { CardBody } from "./components/Card";
-import List from "./components/List";
-import ListaDos from "./components/ListaDos";
-import Button from "./components/Button";
-import Input from "./components/Input";
+import Titulo from "./components/Title/Titulo";
+import Card, { CardBody } from "./components/Card/Card";
+import List from "./components/Lists/List";
+import ListaDos from "./components/Lists/ListaDos";
+import Button from "./components/Button/Button";
+import Input from "./components/Input/Input";
 import { useState } from "react";
 
 <Titulo></Titulo>;
@@ -15,7 +15,7 @@ function App() {
   const colorChosen = document.getElementsByClassName(".inputComponent");
   console.log("This is colorChosen : ", colorChosen);
   const addElement = () => {
-    setData([...Data, `${colorChosen}`]);
+    setData([...Data, `Orange`]);
   };
   const deleteElement = () => {
     setData(Data.slice(0, -1));
